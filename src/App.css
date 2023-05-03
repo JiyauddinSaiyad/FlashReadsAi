@@ -35,7 +35,7 @@
   height: 100%;
   top: 0;
   opacity: 0.4;
-  filter: invert(1);
+  filter: invert(10);
 }
 
 .gradient {
@@ -123,6 +123,16 @@
   @apply rounded-xl border border-gray-200 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-4;
 }
 
-.logo{
+.logo {
   width: 50px;
+  cursor: pointer;
+  transition: transform .8s ease-in-out;
+  @apply rounded-full border border-blue-800 bg-gray-50 py-0 px-0 text-sm text-white transition-all hover:border-gray-200 hover:bg-white hover:text-black;
+
 }
+
+.logo:hover{
+  transform: scale(1.1);
+  transform: rotate(360deg);
+}
+

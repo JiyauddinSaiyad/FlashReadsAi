@@ -10,4 +10,10 @@ export default {
     },
   },
   plugins: [],
+  layers: {
+    utilities: {
+      // Define your `sm:` class here
+      'sm:': ['max-width: 640px'],
+    },
+  },
 }
